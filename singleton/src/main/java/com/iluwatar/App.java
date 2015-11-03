@@ -21,6 +21,12 @@ public class App {
 				.getInstance();
 		System.out.println("threadSafeIvoryTower1=" + threadSafeIvoryTower1);
 		System.out.println("threadSafeIvoryTower2=" + threadSafeIvoryTower2);
+		
+		DoubleCheckIvoryTower doubleIvoryTower1 = DoubleCheckIvoryTower.getInstance();
+		DoubleCheckIvoryTower doubleIvoryTower2 = DoubleCheckIvoryTower.getInstance();
+		System.out.println("doubleIvoryTower1=" + doubleIvoryTower1);
+		System.out.println("doubleIvoryTower2=" + doubleIvoryTower2);
+		
 
 	}
 }
